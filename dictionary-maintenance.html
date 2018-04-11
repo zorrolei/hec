@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>中国港湾工程有限责任公司投票报价管理系统</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <!-- bootstrap-treeview -->
+    <link href="css/plugins/treeview/bootstrap-treeview.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+
+
+<div class="wrapper wrapper-content">
+    <div class="row wrapper wrapper-content">
+        <div class="col-xs-3">
+            <div class="ibox-content">
+                <div id="treeview1" class="test"></div>
+            </div>
+        </div>
+        <div class="col-xs-9">
+            <div class="ibox-content">
+                <div class="example" style="margin-bottom: 20px;">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <a href="javascript:void(0);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            新增字典
+                        </a>
+                        <a href="javascript:void(0);" type="button" class="btn btn-danger delete-button">
+                            删除字典
+                        </a>
+                    </div>
+                    <table class="table table-bordered text-center table-hover margin-top">
+                        <thead>
+                        <tr>
+                            <th data-checkbox="true"></th>
+                            <th data-field="col-01" class="text-center">序号</th>
+                            <th data-field="col-02" class="text-center">名称</th>
+                            <th data-field="col-03" class="text-center">显示序号</th>
+                            <th data-field="col-04" class="text-center">所属上级</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>1</td>
+                            <td>标前报价</td>
+                            <td>1</td>
+                            <td>价格阶段</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+                </button>
+                <h4 class="modal-title">新增字典</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputtext" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputtext" placeholder="请输入字典名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputtext" class="col-sm-2 control-label">排序</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputtext" placeholder="请输入字典排序">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputtext" class="col-sm-2 control-label">所属上级</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="科目字典">科目字典</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <a href="#" class="btn btn-info">保存</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+<script src="js/contabs-sub.js"></script>
+<!-- 第三方插件 -->
+<script src="js/plugins/pace/pace.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+<!-- Sweet alert -->
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+<!-- Bootstrap-Treeview plugin javascript -->
+<script src="js/plugins/treeview/bootstrap-treeview.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('.delete-button').click(function () {
+            swal({
+                    title: "确认删除",
+                    text: "确定删除这条字典吗",
+                    type: "warning",
+                    showCancelButton: true,
+                    cancelButtonText: "取消",
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除",
+                    closeOnConfirm: false
+                },
+                function(){
+                    swal("删除成功", "字典删除成功", "success");
+                });
+        });
+
+        //tree view
+        var defaultData = [
+            {
+                text: '科目字典',
+                href: '#parent1',
+                tags: ['4'],
+                nodes: [
+                    {
+                        text: '一级科目',
+                        href: '#child1',
+                        tags: ['2'],
+                        nodes: [
+                            {
+                                text: '结构类材料',
+                                href: '#grandchild1',
+                                tags: ['0'],
+                                nodes:[
+                                    {
+                                        text: '钢筋',
+                                        href: '#grandchild2',
+                                        tags: ['0']
+                                    },
+                                    {
+                                        text: '其它',
+                                        href: '#grandchild2',
+                                        tags: ['0']
+                                    }
+                                ]
+                            },
+                            {
+                                text: '土建类材料',
+                                href: '#grandchild2',
+                                tags: ['0']
+                            },
+                            {
+                                text: '附属设施',
+                                href: '#grandchild3',
+                                tags: ['0']
+                            },
+                            {
+                                text: '其它',
+                                href: '#grandchild4',
+                                tags: ['0']
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                text: '价格阶段',
+                href: '#parent2',
+                tags: ['0'],
+                nodes:[
+                    {
+                        text: '询价阶段',
+                        href: '#child3',
+                        tags: ['0']
+                    },
+                    {
+                        text: '采购阶段',
+                        href: '#child3',
+                        tags: ['0']
+                    }
+                ]
+            },
+            {
+                text: '交货方式',
+                href: '#parent3',
+                tags: ['0'],
+                nodes:[
+                    {
+                        text: 'FOB',
+                        href: '#child3',
+                        tags: ['0']
+                    },
+                    {
+                        text: 'CIF',
+                        href: '#child3',
+                        tags: ['0']
+                    },
+                    {
+                        text: '工厂交货',
+                        href: '#child3',
+                        tags: ['0']
+                    },
+                    {
+                        text: '到运到现场',
+                        href: '#child3',
+                        tags: ['0']
+                    }
+                ]
+            }
+        ];
+
+        $('#treeview1').treeview({
+            color: "#428bca",
+            expandIcon: 'glyphicon glyphicon-chevron-right',
+            collapseIcon: 'glyphicon glyphicon-chevron-down',
+            nodeIcon: 'none',
+            data: defaultData
+        });
+
+
+
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>中国港湾工程有限责任公司投票报价管理系统</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+
+
+<div class="wrapper wrapper-content">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+
+            <div class="row">
+                <div class="col-xs-4"><h5>标后预算发起</h5></div>
+                <div class="col-xs-8 text-right">
+                    <form action="">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <p class="form-control-static">人员选择</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="" placeholder="请输入人员名称">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary no-margins">查询</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ibox-content">
+        <div class="example" style="margin-bottom: 20px;">
+
+            <table class="table table-bordered text-center table-hover">
+                <thead>
+                <tr>
+                    <th data-field="col-01" class="text-center">序号</th>
+                    <th data-field="col-02" class="text-center">姓名</th>
+                    <th data-field="col-03" class="text-center">所在部门</th>
+                    <th data-field="col-04" class="text-center">权限分配情况</th>
+                    <th data-field="col-07" class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>中非区域公司</td>
+                    <td>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 本部门
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 本部门及下级部门
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 全部
+                        </label>
+                    </td>
+                    <td><a href="javascript:void(0);" type="button" class="label label-danger delete-button">删除</a></td>
+                </tr>
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>中非区域公司</td>
+                    <td>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 本部门
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 本部门及下级部门
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 全部
+                        </label>
+                    </td>
+                    <td><a href="javascript:void(0);" type="button" class="label label-danger delete-button">删除</a></td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+<script src="js/contabs-sub.js"></script>
+<!-- 第三方插件 -->
+<script src="js/plugins/pace/pace.min.js"></script>
+<!-- Bootstrap table -->
+<script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+<!-- Sweet alert -->
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+<!-- Data picker -->
+<script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('.delete-button').click(function () {
+            swal({
+                    title: "确认删除",
+                    text: "确定删除这条纪录吗",
+                    type: "warning",
+                    showCancelButton: true,
+                    cancelButtonText: "取消",
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除",
+                    closeOnConfirm: false
+                },
+                function(){
+                    swal("删除成功", "项目删除成功", "success");
+                });
+        });
+
+        $('.datetimepicker').datetimepicker({
+            format: 'yyyy-mm-dd',
+            autoclose:true,
+            todayBtn:'linked',
+            language:'zh-CN',
+            minView:2
+        });
+
+
+
+
+    });
+</script>
+
+</body>
+
+</html>

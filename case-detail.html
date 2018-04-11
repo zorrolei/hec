@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>中国港湾工程有限责任公司投票报价管理系统</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+
+<div class="wrapper wrapper-content">
+
+    <div class="ibox-content">
+
+        <div class="tabs-container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">项目摘要</a></li>
+                <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">报批文件</a></li>
+                <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">办理轨迹</a></li>
+                <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">预算沟通</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active">
+                    <div class="panel-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目名称(中文)</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputtext" placeholder="请输入项目中文名称">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label">项目名称(英文)</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputtext" placeholder="请输入项目英文名称">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label">项目编号</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputtext" placeholder="请输入项目编号">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>业务区域</label>
+                                <div class="col-sm-2">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="">丰台区</option>
+                                    </select>
+                                </div>
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目所在国</label>
+                                <div class="col-sm-2">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+                                        <option value="">中国</option>
+                                    </select>
+                                </div>
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目所在地区</label>
+                                <div class="col-sm-2">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目规模(万美元)</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" id="inputtext" placeholder="项目规模">
+                                </div>
+
+
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目类型</label>
+                                <div class="col-sm-4">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">请选择</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>交标日期</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                </div>
+                                <label for="inputtext" class="col-sm-2 control-label">项目延期至</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>文件名称</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目投标预算</td>
+                                <td><span class="text-primary">附件（0）</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-pane">
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>项目阶段</th>
+                                    <th>办理人</th>
+                                    <th>开始办理时间</th>
+                                    <th>结束办理时间</th>
+                                    <th>意见</th>
+                                    <th>办理结果</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td>提交下一步</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>预算编制</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>请总部投标报价部同事初审</td>
+                                    <td><a href="javascript:void(0);" type="button" class="label label-danger">退回</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="tab-4" class="tab-pane">
+                    <div class="panel-body">
+                        <div class="example" style="margin-bottom: 20px;">
+                            <div class="btn-group hidden-xs" id="exampleToolbar2" role="group">
+                                <a href="javascript:void(0);" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                                    发起新问题
+                                </a>
+                            </div>
+                            <table class="table table-bordered text-center table-hover margin-top">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">序号</th>
+                                    <th class="text-center">问题</th>
+                                    <th class="text-center">人员</th>
+                                    <th class="text-center">部门</th>
+                                    <th class="text-center">时间</th>
+                                    <th class="text-center">状态</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td onclick="openChild(1)"><i class="fa fa-plus text-primary"></i> <a href="javascript:void(0)">标后预算中的XX表的XX费用来源是什么？</a></td>
+                                    <td>张三</td>
+                                    <td>投标报价部</td>
+                                    <td>2017/7/17<br>13:18:36</td>
+                                    <td>打开</td>
+                                    <td><a href="javascript:void(0);" class="label label-primary">关闭</a> <a href="javascript:void(0);" class="label label-primary" >挂起</a> <a href="javascript:void(0);" type="button" class="label label-danger delete-button">删除</a> <a href="javascript:void(0);" class="label label-primary" data-toggle="modal" data-target="#myModal">回复</a></td>
+                                </tr>
+                                <tr class="childItem1" style="display: none;">
+                                    <td></td>
+                                    <td>标后预算中的XX表的XX费用来源是什么？</td>
+                                    <td>张三</td>
+                                    <td>投标报价部</td>
+                                    <td>2017/7/17<br>13:18:36</td>
+                                    <td>打开</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td onclick="openChild(2)"><i class="fa fa-plus text-primary"></i> <a href="javascript:void(0)">标后预算中的XX表的XX费用来源是什么？</a></td>
+                                    <td>张三</td>
+                                    <td>投标报价部</td>
+                                    <td>2017/7/17<br>13:18:36</td>
+                                    <td>打开</td>
+                                    <td><a href="javascript:void(0);" class="label label-primary">关闭</a> <a href="javascript:void(0);" class="label label-primary" >挂起</a> <a href="javascript:void(0);" type="button" class="label label-danger delete-button">删除</a> <a href="javascript:void(0);" class="label label-primary" data-toggle="modal" data-target="#myModal">回复</a></td>
+                                </tr>
+                                <tr class="childItem2" style="display: none;">
+                                    <td></td>
+                                    <td>标后预算中的XX表的XX费用来源是什么？</td>
+                                    <td>张三</td>
+                                    <td>投标报价部</td>
+                                    <td>2017/7/17<br>13:18:36</td>
+                                    <td>打开</td>
+                                    <td></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+<script src="js/contabs-sub.js"></script>
+<!-- 第三方插件 -->
+<script src="js/plugins/pace/pace.min.js"></script>
+
+<!-- Sweet alert -->
+<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+<!-- Data picker -->
+<script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+<script>
+    $(document).ready(function () {
+
+
+        $('.delete-button').click(function () {
+            swal({
+                    title: "确认删除",
+                    text: "确定删除这条纪录吗",
+                    type: "warning",
+                    showCancelButton: true,
+                    cancelButtonText: "取消",
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "确定删除",
+                    closeOnConfirm: false
+                },
+                function(){
+                    swal("删除成功", "项目删除成功", "success");
+                });
+        });
+
+        $('.datetimepicker').datetimepicker({
+            format: 'yyyy-mm-dd',
+            autoclose:true,
+            todayBtn:'linked',
+            language:'zh-CN',
+            minView:2
+        });
+
+
+
+
+    });
+
+    function openChild(item) {
+        var Item=".childItem"+item;
+        if($(Item).is(":hidden")){
+            $(Item).show();
+        }else{
+            $(Item).hide();
+        }
+    }
+</script>
+
+</body>
+
+</html>
