@@ -208,15 +208,18 @@
                 <div class="tabs-container">
                     <ul class="nav nav-tabs">
                         <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">项目摘要</a></li>
-                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">报批文件</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">预算文件</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">预算文件2</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">预算文件3</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-8" aria-expanded="false">预算概况</a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane active">
                             <div class="panel-body">
                                 <form class="form-horizontal">
                                     <div class="form-group">
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目名称(中文)</label>
-                                        <div class="col-sm-10">
+                                        <label for="inputtext" class="col-sm-2 control-label">项目名称(中文)</label>
+                                        <div class="col-sm-4">
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="请输入项目中文名称">
                                                 <span class="input-group-btn">
@@ -224,136 +227,674 @@
                                                   </span>
                                             </div><!-- /input-group -->
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputtext" class="col-sm-2 control-label">项目名称(英文)</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入项目英文名称">
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="inputtext" class="col-sm-2 control-label">项目编号</label>
-                                        <div class="col-sm-10">
+                                        <div class="col-sm-4">
                                             <input type="text" class="form-control" id="inputtext" placeholder="请输入项目编号">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>业务区域</label>
-                                        <div class="col-sm-2">
-                                            <select name="" id="" class="form-control">
-                                                <option value="">请选择</option>
-                                                <option value="">丰台区</option>
+                                        <label for="inputtext" class="col-sm-2 control-label">工程地点</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入工程地点">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">合同额</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入合同额">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">咨工</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入咨工">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">业主</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入业主">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">项目类型</label>
+                                        <div class="col-sm-4">
+                                            <select name="" class="form-control" id="">
+                                                <option value="自营">请选择</option>
+                                                <option value="总承包">附属设施</option>
                                             </select>
                                         </div>
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目所在国</label>
-                                        <div class="col-sm-2">
-                                            <select name="" id="" class="form-control">
-                                                <option value="">请选择</option>
-                                                <option value="">中国</option>
-                                            </select>
-                                        </div>
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目所在地区</label>
-                                        <div class="col-sm-2">
-                                            <select name="" id="" class="form-control">
-                                                <option value="">请选择</option>
+                                        <label for="inputtext" class="col-sm-2 control-label">项目管理模式</label>
+                                        <div class="col-sm-4">
+                                            <select name="" class="form-control" id="">
+                                                <option value="自营">请选择</option>
+                                                <option value="自营">自营</option>
+                                                <option value="总承包">总承包</option>
+                                                <option value="联营">联营</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目规模(万美元)</label>
+                                        <label for="inputtext" class="col-sm-2 control-label">主管机构</label>
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="inputtext" placeholder="项目规模">
-                                        </div>
-
-
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>项目类型</label>
-                                        <div class="col-sm-4">
-                                            <select name="" id="" class="form-control">
-                                                <option value="">请选择</option>
+                                            <select name="" class="form-control" id="">
+                                                <option value="自营">请选择</option>
                                             </select>
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">资金来源</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入资金来源">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputtext" class="col-sm-2 control-label"><span class="text-danger">*</span>交标日期</label>
+                                        <label for="inputtext" class="col-sm-2 control-label">合同开工日期</label>
                                         <div class="col-sm-4">
                                             <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
                                         </div>
-                                        <label for="inputtext" class="col-sm-2 control-label">项目延期至</label>
+                                        <label for="inputtext" class="col-sm-2 control-label">合同完工日期</label>
                                         <div class="col-sm-4">
                                             <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
                                         </div>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">实际开工日期</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">计划完工日期</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">工程主体及工程量简述</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+
+
+
                                     <div class="form-group text-center">
                                         <button type="button" class="btn btn-primary">保存</button>
                                     </div>
-                                    
+
                                 </form>
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane">
                             <div class="panel-body">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th width="10%">序号</th>
-                                            <th>文件名称</th>
-                                            <th width="10%">操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>项目投标预算</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>合作方选择审批表</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>项目实施策划大纲</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>项目主合同</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>项目分包合同</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>项目执行预算审批表</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>1、项目执行预算编制说明 <br>2、预算汇总表  <br>3、成本编码表  <br>4、其他附表：人工费计算明细表、分包汇总表、材料费及机械费、机会风险费、现金流量表（图）及工料机分解表等</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>本地驻外机构意见函</td>
-                                            <td><span class="text-primary">附件（0）</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <h4>支持文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="15%">序号</th>
+                                                <th>内容</th>
+                                                <th>是否必填</th>
+                                                <th>说明</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td></td>
+                                                <td>支持文件</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>《合作方选择审批表》</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目主合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目分包合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td>必填</td>
+                                                <td>A类项目</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h4>报批文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="15%">序号</th>
+                                                <th>文件名称</th>
+                                                <th width="15%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>合作方选择审批表</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目主合同</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目分包合同</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>1、项目执行预算编制说明 <br>2、预算汇总表  <br>3、成本编码表  <br>4、其他附表：人工费计算明细表、分包汇总表、材料费及机械费、机会风险费、现金流量表（图）及工料机分解表等</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <h4>支持文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="15%">序号</th>
+                                                <th>内容</th>
+                                                <th>是否必填</th>
+                                                <th>说明</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td></td>
+                                                <td>支持文件</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>《合作方选择审批表》</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目主合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目分包合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td>必填</td>
+                                                <td>A类项目</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h4>报批文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="10%">序号</th>
+                                                <th>文件类型</th>
+                                                <th width="10%">上传人</th>
+                                                <th width="15%">上传时间</th>
+
+                                                <th width="10%">版本号</th>
+                                                <th width="10%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>项目投标预算</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+
+                                                <td>V2.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>合作方选择审批表</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V2.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目主合同</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目分包合同</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>1、项目执行预算编制说明<br>
+                                                    2、预算汇总表<br>
+                                                    3、成本编码表<br>
+                                                    4、其他附表：人工费计算明细表、分包汇总表、材料费及机械费、机会风险费、现金流量表（图）及工料机分解表等</td>
+
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <h4>支持文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="15%">序号</th>
+                                                <th>内容</th>
+                                                <th>是否必填</th>
+                                                <th>说明</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td></td>
+                                                <td>支持文件</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>《合作方选择审批表》</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目主合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目分包合同</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td>必填</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td>必填</td>
+                                                <td>A类项目</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <h4>报批文件</h4>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th width="10%">序号</th>
+                                                <th>文件类型</th>
+                                                <th width="10%">上传人</th>
+                                                <th width="15%">上传时间</th>
+
+                                                <th width="10%">版本号</th>
+                                                <th width="10%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>项目投标预算</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>合作方选择审批表</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>项目实施策划大纲</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V2.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>项目主合同</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>项目分包合同</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>项目代理咨询合同、项目JV协议等其他支持类文件</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>项目执行预算与已批复的投标预算差异比较比较及说明</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V2.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>项目执行预算审批表</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>1、项目执行预算编制说明<br>
+                                                    2、预算汇总表<br>
+                                                    3、成本编码表<br>
+                                                    4、其他附表：人工费计算明细表、分包汇总表、材料费及机械费、机会风险费、现金流量表（图）及工料机分解表等</td>
+
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V3.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>本地驻外机构意见函</td>
+                                                <td>xxx</td>
+                                                <td>2018-04-11</td>
+                                                <td>V1.0</td>
+                                                <td><span class="text-primary">附件（0）</span></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tab-8" class="tab-pane">
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">预算编号</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="预算编号">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">预算上报日期</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">预算审批日期</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" class="form-control datetimepicker" id="inputtext" placeholder="选择日期">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">预算收入</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入预算收入">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">预算成本</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入预算成本">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">预算利润</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入预算利润">
+                                        </div>
+                                        <label for="inputtext" class="col-sm-2 control-label">预算利润率</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="inputtext" placeholder="请输入预算利润率">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="inputtext" class="col-sm-2 control-label">预算说明</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group text-center">
+                                        <button type="button" class="btn btn-primary">保存</button>
+                                    </div>
+
+                                </form>
+
                             </div>
                         </div>
                     </div>
