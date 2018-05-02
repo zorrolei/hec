@@ -7927,3 +7927,7 @@ margin-right: -5px;
         width: 1100px;
     }
 }
+
+th{
+    text-align:center;/** 设置水平方向居中 */
+}
